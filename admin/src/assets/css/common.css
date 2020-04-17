@@ -1,0 +1,12 @@
+html,body,#app{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/*面包 */
+.el-breadcrumb { 
+  font-size: 12px;
+}
+.el-pagination{
+  margin-top: 0.5rem;
+}
