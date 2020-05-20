@@ -25,6 +25,7 @@
       <el-table :data="tableData" style="width: 100%" max-height="550">
         <el-table-column type="index"> </el-table-column>
         <el-table-column prop="_id" label="ID" width="250"> </el-table-column>
+        
         <!-- <el-table-column 
       prop="categories"
       label="文章分类"
@@ -36,6 +37,7 @@
     </el-table-column> -->
         <el-table-column prop="title" label="文章标题" width="350">
         </el-table-column>
+        <el-table-column prop="created" label="创建时间" width="250"> </el-table-column>
         <el-table-column label="操作">
           <template slot-scope="scope">
             <el-button @click="handleClick(scope.row)" type="text" size="small"

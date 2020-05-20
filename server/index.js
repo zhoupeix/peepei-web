@@ -10,7 +10,8 @@ app.use('/uploads',express.static(__dirname + '/uploads'))//静态文件托管
 
 require('./routes/admin')(app)
 require('./plugins/db')(app)
+require('./routes/web')(app)
 
-app.listen(3000,()=>{
-  console.log('http://localhost:3000')
+app.listen(3001,()=>{
+  console.log('http://localhost:3001')
 })

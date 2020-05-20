@@ -6,7 +6,8 @@ const schema = new mongoose.Schema({
   items:[{
     image:{type:String},
     url:{type:String}
-  }]
+  }]},
+  { timestamps: { createdAt: 'created', updatedAt: 'updated' } 
 })
 
 module.exports = mongoose.model('Ad',schema)

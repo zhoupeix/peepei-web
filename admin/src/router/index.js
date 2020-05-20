@@ -40,6 +40,20 @@ const routes = [
       {path: '/admin_user/create',component:()=>import('../views/AdminUserEdit.vue')},
       {path: '/admin_user/edit/:id',component:()=>import('../views/AdminUserEdit.vue'),props:true},
       {path: '/admin_user/list',component:()=>import('../views/AdminUserList.vue')},
+
+      {path: '/custom/create',component:()=>import('../views/CustomEdit.vue')},
+      {path: '/custom/edit/:id',component:()=>import('../views/CustomEdit.vue'),props:true},
+      {path: '/custom/list',component:()=>import('../views/CustomList.vue')},
+      
+      {path: '/applicant/create',component:()=>import('../views/ApplicantEdit.vue')},
+      {path: '/applicant/edit/:id',component:()=>import('../views/ApplicantEdit.vue'),props:true},
+      {path: '/applicant/list',component:()=>import('../views/ApplicantList.vue')},
+      
+      {path: '/case/create',component:()=>import('../views/CaseEdit.vue')},
+      {path: '/case/edit/:id',component:()=>import('../views/CaseEdit.vue'),props:true},
+      {path: '/case/list',component:()=>import('../views/CaseList.vue')},
+
+
     
     ]
 

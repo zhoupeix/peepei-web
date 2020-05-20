@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Vue from 'vue'
 const http = axios.create({
-  baseURL:'http://localhost:3000/admin/api'
+  baseURL:'http://localhost:3001/admin/api'
 })
 http.interceptors.request.use(config=>{ //在请求头中添加 authorization 
   // Do something before request is sent

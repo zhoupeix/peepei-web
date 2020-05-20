@@ -17,11 +17,13 @@ module.exports = app => {
 
   router.get("/",
     async (req, res) => {
+      console.log('req.query',req.query)
       const queryOptions = {};
       if (req.Model.modelName === "Category") {
         queryOptions.populate = "parent";
       }
       if(Object.keys(req.query).length !== 0 ){
+        
         if(req.query.query){
           let query={};
           let items
@@ -45,7 +47,7 @@ module.exports = app => {
           let pageNum = parseInt(req.query.pageNum)
           let pageSize = parseInt(req.query.pageSize) 
           let pageNums = pageSize * (pageNum -1)
-          
+          console.log('查询总',pageNums)
           // if(req.Model.modelName === 'Article') {
           //   queryOptions.populate = 'categories'
           //   console.log('进来了')
@@ -68,11 +70,14 @@ module.exports = app => {
         const items = await req.Model.find()
           .setOptions(queryOptions)
         res.send(items);
+        console.log("items",items)
       }
     });
 
   router.get("/:id", async (req, res) => {
+    console.log('req.',req.params.id)
     const item = await req.Model.findById(req.params.id);
+    
     res.send(item);
   });
 
@@ -95,7 +100,7 @@ module.exports = app => {
   const upload = multer({ dest: __dirname + "/../../uploads" });
   app.post("/admin/api/upload",authMiddleWare(),upload.single("file"), async (req, res) => {
     const file = req.file;
-    file.url = `http://localhost:3000/uploads/${file.filename}`;
+    file.url = `http://localhost:3001/uploads/${file.filename}`;
     res.send(file);
   });
 
@@ -120,6 +125,8 @@ module.exports = app => {
     const token = jwt.sign({ id: user._id }, app.get("secret"));
     res.send({ token, username });
   });
+
+  app.use('/web/api/res/:resource',rescourceMiddleWare(),router);
 
   //http 错误处理
   app.use(async (err, req, res, next) => {

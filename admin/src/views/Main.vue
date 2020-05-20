@@ -72,7 +72,7 @@
       <el-submenu index="2">
         <template slot="title">
           <i class="el-icon-goods"></i>
-          <span>物品管理</span>
+          <span>物品管理(页面案例)</span>
         </template>
         <el-menu-item-group>
           <el-menu-item index="/item/list">物品列表</el-menu-item>
@@ -113,12 +113,42 @@
       </el-submenu>
       <el-submenu index="6">
         <template slot="title">
-          <i class="el-icon-s-custom"></i>
+          <i class="el-icon-user"></i>
           <span>管理员管理</span>
         </template>
         <el-menu-item-group>
           <el-menu-item index="/admin_user/list">管理员列表</el-menu-item>
           <el-menu-item index="/admin_user/create">新建管理员</el-menu-item>
+        </el-menu-item-group>
+        </el-submenu>
+        <el-submenu index="7">
+        <template slot="title">
+          <i class="el-icon-s-custom"></i>
+          <span>客户管理</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="/custom/create">新建客户</el-menu-item>
+          <el-menu-item index="/custom/list">客户列表</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
+        <el-submenu index="9">
+        <template slot="title">
+          <i class="el-icon-s-custom"></i>
+          <span>案例管理(底部案例)</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="/case/create">新建案例</el-menu-item>
+          <el-menu-item index="/case/list">案例列表</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
+        <el-submenu index="8">
+        <template slot="title">
+          <i class="el-icon-s-custom"></i>
+          <span>申请管理</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="/applicant/create">申请试用</el-menu-item>
+          <el-menu-item index="/applicant/list">申请试用列表</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -126,7 +156,9 @@
     
 
     <el-main>
-      <router-view></router-view>
+      <!-- 默认以组件区分 如果组件一样 以route区分 这样页面数据会清空 -->
+      <router-view :key="$route.path"></router-view>
+
       <!-- <el-table :data="tableData">
         <el-table-column prop="date" label="日期" width="140">
         </el-table-column>

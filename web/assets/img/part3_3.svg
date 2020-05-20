@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="160px" viewBox="0 0 240 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>part3_3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="192" height="130"></rect>
+        <filter x="-9.9%" y="-13.1%" width="119.8%" height="129.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.552941176   0 0 0 0 0.929411765  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="2018-12版本规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="大客户行业解决方案-copy" transform="translate(-808.000000, -1631.000000)">
+            <g id="分组-6" transform="translate(808.000000, 1631.000000)">
+                <g id="分组-4" transform="translate(24.000000, 15.000000)">
+                    <g id="矩形-copy-17">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="矩形-copy-18" fill="#F4F6FC" x="8" y="25" width="176" height="59"></rect>
+                    <rect id="矩形-copy-19" fill="#E4E7F0" x="8" y="10" width="32" height="9"></rect>
+                    <rect id="矩形-copy-68" fill="#E4E7F0" x="94" y="105.720449" width="90" height="3"></rect>
+                    <rect id="矩形-copy-71" fill="#E4E7F0" x="94" y="99.7204494" width="90" height="3"></rect>
+                    <rect id="矩形-copy-69" fill="#E4E7F0" x="94" y="111.720449" width="90" height="3"></rect>
+                    <rect id="矩形-copy-70" fill="#E4E7F0" x="94" y="117.720449" width="29" height="3"></rect>
+                    <rect id="矩形-copy-27" fill="#7ED321" x="163" y="10" width="20" height="3"></rect>
+                    <rect id="矩形-copy-28" fill="#FF5B00" x="170" y="16" width="13" height="3"></rect>
+                    <path d="M13,78.7204494 C23.1204587,67.5012991 33.1204587,60.6356167 43,58.1234021 C57.8193119,54.3550803 70.9006369,65.5263548 94,58.1234021 C117.099363,50.7204494 114.170716,36.0914876 137.390607,36.0001943 C152.870535,35.939332 166.842381,50.1794171 179.306145,78.7204494" id="路径-5" stroke="#1F8DED" fill-opacity="0.1" fill="#1798FC"></path>
+                    <rect id="矩形" fill="#F4F6FC" x="8" y="90" width="78" height="33"></rect>
+                    <rect id="矩形" fill="#DCDEE6" x="18" y="99" width="6" height="24"></rect>
+                    <rect id="矩形-copy-63" fill="#DCDEE6" x="40" y="103" width="6" height="20"></rect>
+                    <rect id="矩形-copy-65" fill="#DCDEE6" x="62" y="107" width="6" height="16"></rect>
+                    <rect id="矩形-copy-29" fill="#DCDEE6" x="26" y="117" width="6" height="6"></rect>
+                    <rect id="矩形-copy-64" fill="#DCDEE6" x="48" y="111" width="6" height="12"></rect>
+                    <rect id="矩形-copy-66" fill="#DCDEE6" x="70" y="98" width="6" height="25"></rect>
+                    <rect id="矩形" fill="#E4E7F0" x="94" y="90.7204494" width="27" height="5"></rect>
+                </g>
+                <rect id="矩形" x="0" y="0" width="240" height="160"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,6 +4,7 @@ module.exports = options=>{
     const modelName = inflection.classify(req.params.resource);
 
     req.Model = require(`../models/${modelName}`);
+    console.log(req.Model)
     next();
   }
 }

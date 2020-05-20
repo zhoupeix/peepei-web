@@ -15,6 +15,13 @@
           clearable
         ></el-input>
       </el-form-item>
+      <el-form-item label="物品标题：">
+        <el-input
+          v-model="model.title"
+          placeholder="请输入标题"
+          clearable
+        ></el-input>
+      </el-form-item>
       <el-form-item label="物品图标：">
         <el-upload
           class="avatar-uploader"
@@ -28,6 +35,13 @@
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
         </el-upload>
       </el-form-item>
+      <el-form-item label="内容：">
+        <vue-editor
+          useCustomImageHandler
+          @image-added="handleImageAdded"
+          v-model="model.content"
+        ></vue-editor>
+      </el-form-item>
       <el-form-item>
         <el-button type="primary" native-type="submit" class="el-icon-upload">保存</el-button>
       </el-form-item>
@@ -38,7 +52,11 @@
 </template>
 
 <script>
+import { VueEditor } from "vue2-editor";
 export default {
+  components: {
+    VueEditor
+  },
   props: {
     id: {}
   },
@@ -50,6 +68,17 @@ export default {
     };
   },
   methods: {
+    async handleImageAdded(file, Editor, cursorLocation, resetUploader) {
+      // An example of using FormData
+      // NOTE: Your key could be different such as:
+      // formData.append('file', file)
+
+      let formData = new FormData();
+      formData.append("file", file);
+      let res = await this.$http.post("upload", formData);
+      Editor.insertEmbed(cursorLocation, "image", res.data.url);
+      resetUploader();
+    },
     handleAvatarSuccess(res, file) {
       this.$set(this.model,'icon',res.url)
         // this.model.icon = res.url
