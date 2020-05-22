@@ -24,7 +24,7 @@
                   v-text="item.header"
                 ></v-subheader> -->
 
-                  <v-divider :key="index" inset></v-divider>
+                  
                   <v-list-item
                     :to="{
                       path: `/news/${item._id}`,
@@ -54,11 +54,12 @@
                       }}</v-list-item-action-text>
                     </v-list-item-content>
                   </v-list-item>
+                  <v-divider :key="index" inset></v-divider>
                 </template>
               </v-list>
             </v-card>
             <div class="text-center">
-          <v-pagination
+          <v-pagination class="mb-2"
             v-model="pagination"
             :length="item.total"
             :total-visible="5"
