@@ -1,8 +1,9 @@
 import axios from 'axios'
 import Vue from 'vue'
 const http = axios.create({
-  baseURL:process.env.VUE_APP_API_URL || '/admin/api'
+  baseURL:process.env.VUE_APP_API_URL || '/admin/api',
   // baseURL:'http://localhost:3001/admin/api'
+  headers: {'content-type': 'application/x-www-form-urlencoded'} 
 })
 http.interceptors.request.use(config=>{ //在请求头中添加 authorization 
   // Do something before request is sent

@@ -21,9 +21,11 @@
         三大棋牌类游戏开发方案 ，为您解决运营难题
       </p>
       <div class="button ">
-        <a class="btn1" href="services"></a>
-        <a class="btn2" href="services"></a>
-        <a class="btn3" href="services"></a>
+        <nuxt-link class="btn1" :to="{path:'/services'}"></nuxt-link> 
+        <nuxt-link class="btn2" :to="{path:'/services'}"></nuxt-link> 
+        <nuxt-link class="btn2" :to="{path:'/services'}"></nuxt-link> 
+        <!-- <a class="btn2" href="services"></a>
+        <a class="btn3" href="services"></a> -->
       </div>
     </v-sheet>
 
@@ -56,7 +58,7 @@
           <div class="ui-gamelist-content">
             <h2 class="ma-2" style="display:inline-block">热门手机游戏列表</h2>
             <p class="ma-2" style="display:inline-block; float:right">
-              <a href="/products" class="fn-right">更多游戏 &gt;</a>
+              <nuxt-link :to="{path:'/products'}" class="fn-right">更多游戏 &gt;</nuxt-link>
             </p>
             <ul id="game-list">
               <li class="ui-game-9" v-for="(item, i) in imgUrls" :key="i">

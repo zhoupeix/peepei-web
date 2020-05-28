@@ -1,11 +1,22 @@
 import colors from 'vuetify/es5/util/colors'
 import dotenv from 'dotenv'
 dotenv.config()
+// let baseUrl =''
+//    switch (process.env.BASE) {   
+//    case 'dev':baseUrl = process.env.DEV_BASE_URL     
+//    break;     
+//    case 'production':     
+//    baseUrl = process.env.PROD_BASE_URL     
+//    break;   
+//    } 
 export default {
   mode: 'universal',
   /*
   ** Headers of the page
   */
+  // env: { 
+  //   BASE_URL: process.env.BASE_URL,
+  //   NODE_ENV: process.env.NODE_ENV} ,
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
@@ -34,6 +45,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    //  '@/plugins/axios.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -50,14 +62,14 @@ export default {
     // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+    // '@nuxtjs/proxy',
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-
-
+    
   },
   /*
   ** vuetify module configuration
@@ -87,6 +99,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['axios'],
     extend (config, ctx) {
       
     }
