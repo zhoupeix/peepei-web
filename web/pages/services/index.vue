@@ -1,6 +1,6 @@
 <template>
 <v-sheet align='center' justify='center'>
-  <div class="banner" >   
+  <div class="service-banner" >   
 	</div>
 <div id="about" class=" display-3 mt-8 ">服务</div>
 <p class="mb-9 mt-2" style="color:#757575">
@@ -17,7 +17,7 @@
                 height='260'
               >
               <div align="center" justify="center" class="mb-1">
-                <img src="@/assets/img/poker.png" alt="">
+                <img class="icon" src="@/assets/img/poker.png" alt="">
                 <p style="font-weight:bold">地方特色棋牌开发</p>
                 <p style=" font-size: 14px;
                   color: #696969;
@@ -38,7 +38,7 @@
                 height='260'
               >
                 <div align="center" justify="center" class="mb-1">
-                <img src="@/assets/img/majiang.png" alt="">
+                <img  class='icon' src="@/assets/img/majiang.png" alt="">
                 <p style="font-weight:bold">地方特色麻将开发</p>
                 <p style=" font-size: 14px;
                   color: #696969;
@@ -60,7 +60,7 @@
               height='260'
             >
               <div align="center" justify="center" class="mb-1">
-                <img src="@/assets/img/fish.png" alt="">
+                <img class='icon' src="@/assets/img/fish.png" alt="">
                 <p style="font-weight:bold">捕鱼游戏开发</p>
                 <p style=" font-size: 14px;
                   color: #696969;
@@ -81,7 +81,7 @@
               height='260'
             >
               <div align="center" justify="center" class="mb-1">
-                <img class="pa-1" src="@/assets/img/roomcard.png" alt="">
+                <img cclass='icon' src="@/assets/img/roomcard.png" alt="">
                 <p style="font-weight:bold">地方房卡棋牌开发</p>
                 <p style=" font-size: 14px;
                   color: #696969;
@@ -104,7 +104,7 @@
               height='260'
             >
               <div align="center" justify="center" class="mb-1">
-                <img src="@/assets/img/game.png" alt="">
+                <img class='icon' src="@/assets/img/game.png" alt="">
                 <p style="font-weight:bold">休闲街机游戏开发</p>
                 <p style=" font-size: 14px;
                   color: #696969;
@@ -229,8 +229,8 @@ export default {
 </script>
 
 <style >
-.banner{
-    background: url('../../assets/img/solution.png') no-repeat;
+.service-banner{
+    background: url(../../assets/img/solution.png) no-repeat;
     width: 100%;
     height: 300px;
     display: block;
@@ -255,8 +255,8 @@ export default {
   vertical-align: middle;
   margin-left: 24px;
 }
-img{
-  widows: 60px;
+.icon{
+  width: 60px;
   height: 60px;
 }
 .v-card--reveal {

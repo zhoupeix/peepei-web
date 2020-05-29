@@ -1,6 +1,6 @@
 <template>
   <v-sheet align="center" justify="center">
-    <div class="banner"></div>
+    <div class="case-banner"></div>
      <p class="mt-9 headline font-weight-regular">游戏案例</p>
       <p class="about "></p>
     <v-row>
@@ -130,7 +130,7 @@ export default {
 </script>
 
 <style>
-.banner {
+.case-banner {
   background: url('../../assets/img/trust.png') no-repeat;
   width: 100%;
   height: 300px;

@@ -1,6 +1,6 @@
 <template>
   <v-sheet>
-    <div class="banner"></div>
+    <div class="cooperation-banner"></div>
     <div width="400" align="center" justify="center">
       <p class="mt-9 headline font-weight-regular">选择西窗的理由</p>
       <p class="about "></p>
@@ -115,7 +115,7 @@
       <v-row>
         <v-col>
           <v-hover v-slot:default="{ hover }">
-            <v-card class="mx-auto" color="grey lighten-4" max-width="350" height="560">
+            <v-card class="mx-auto" color="grey lighten-4" max-width="350" height="490">
               <v-img
                 :aspect-ratio="16 / 9"
                 :src="require('@/assets/img/majiang1.png')"
@@ -150,16 +150,16 @@
                 <h3 class="display-1 font-weight-light orange--text mb-2">
                   保证金模式
                 </h3>
-                <div class="font-weight-light title mb-2">
+                <p class="font-weight-light subtitle-1 mb-2" >
                   支持合作一款或多款游戏产品，仅需缴纳少量开发保证金即可加入合作项目，在达到一定的条件后，西窗将全额退还保证金部分，真正实现零开发成本合作棋牌项目。
-                </div>
+                </p>
               </v-card-text>
             </v-card>
           </v-hover>
         </v-col>
         <v-col>
           <v-hover v-slot:default="{ hover }">
-            <v-card class="mx-auto" color="grey lighten-4" max-width="350" height="560">
+            <v-card class="mx-auto" color="grey lighten-4" max-width="350" height="490">
               <v-img
                 :aspect-ratio="16 / 9"
                 :src="require('@/assets/img/majiang2.png')"
@@ -193,16 +193,16 @@
                 <h3 class="display-1 font-weight-light orange--text mb-2">
                   独家定制服务
                 </h3>
-                <div class="font-weight-light title mb-2">
+                <p class="font-weight-light subtitle-1 mb-2">
                   合作方将承担所有开发费用及后期技术维护费用，西窗持续负责游戏产品的优化更新及营销活动技术支撑；合作方自行负责营销策略的制定和执行工作，以及地方棋牌游戏的推广落地，合作方取得该项目的所有权益。
-                </div>
+                </p>
               </v-card-text>
             </v-card>
           </v-hover>
         </v-col>
         <v-col>
           <v-hover v-slot:default="{ hover }">
-            <v-card class="mx-auto" color="grey lighten-4" max-width="350" height="560">
+            <v-card class="mx-auto" color="grey lighten-4" max-width="350" height="490">
               <v-img
                 :aspect-ratio="16 / 9"
                 :src="require('@/assets/img/majiang3.png')"
@@ -236,9 +236,9 @@
                 <h3 class="display-1 font-weight-light orange--text mb-2">
                   租赁模式
                 </h3>
-                <div class="font-weight-light title mb-2">
+                <p class="font-weight-light subtitle-1 mb-2">
                   合作方缴纳一定的租赁保证金，西窗将开发符合合作方要求的游戏产品，前期开发费用由西窗承担，后期维护技术费用由合作伙伴承担，游戏收益权归属合作方，西窗提供技术服务。
-                </div>
+                </p>
               </v-card-text>
             </v-card>
           </v-hover>
@@ -296,8 +296,8 @@ export default {
 </script>
 
 <style>
-.banner {
-  background: url('../../assets/img/operation.png') no-repeat;
+.cooperation-banner {
+  background: url(../../assets/img/operation.png) no-repeat;
   width: 100%;
   height: 300px;
   display: block;
@@ -390,13 +390,13 @@ export default {
 .flow-step-ico7 p{
   margin-top:130px
 }
-img {
+.mb-1 img {
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transition-delay: 0s;
 }
-img:hover {
+.mb-1 img:hover {
   transform: translateY(-8px);
 }
 

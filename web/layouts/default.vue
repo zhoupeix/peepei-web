@@ -19,7 +19,7 @@
           ></v-img>
         </template>
         <div>
-          <img src="@/assets/img/wlogo.png" alt="" />
+          <img src="@/assets/img/wlogo.png" alt="西窗游戏" />
         </div>
         <!-- <v-app-bar-nav>
           <img src="@/assets/img/wlogo.png" alt="">
@@ -108,13 +108,14 @@
         <template v-slot:activator="{ on }">
           <v-btn target="_blank" v-on="on" to="/profolios">
             <span>Profolios</span>
-            <v-icon>mdi-cards-diamond</v-icon>
+            <!-- <v-icon>mdi-cards-diamond</v-icon> -->
+            <v-icon>mdi-cards-club</v-icon>
           </v-btn>
         </template>
         <span>技术</span>
       </v-tooltip>
 
-      <v-tooltip top>
+      <!-- <v-tooltip top>
         <template v-slot:activator="{ on }">
           <v-btn target="_blank" v-on="on" to="/contact">
             <span>Team</span>
@@ -122,7 +123,7 @@
           </v-btn>
         </template>
         <span>团队</span>
-      </v-tooltip>
+      </v-tooltip> -->
 
       <v-tooltip top>
         <template v-slot:activator="{ on }">
@@ -269,8 +270,8 @@ export default {
   display: block;
 }
 img {
-  width: 40px;
-  height: 40px;
+  max-width: 150px;
+  /* height: 40px; */
   margin: 5px 10px;
 }
 /* 客服浮窗 */

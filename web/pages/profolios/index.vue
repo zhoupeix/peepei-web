@@ -188,7 +188,7 @@
   text-align: center;
 }
 .mid1 {
-  background: url('../../assets/img/banner.png');
+  background: url(../../assets/img/banner.png);
   background-repeat: no-repeat;
   background-size: 1500px auto;
   background-position: 0 100%;
@@ -210,7 +210,7 @@
 }
 .contant {
   padding: 0 100px;
-  background: url('../../assets/img/girl.png') no-repeat;
+  background: url(../../assets/img/girl.png) no-repeat;
   background-position: 705px 54px;
   background-size: 355px;
   height: 410px;
@@ -307,7 +307,7 @@
 }
 .contant5 {
   padding: 0 100px;
-  background: url('../../assets/img/part4.svg') no-repeat;
+  background: url(../../assets/img/part4.svg) no-repeat;
   background-position: 70px 60px;
 }
 </style>

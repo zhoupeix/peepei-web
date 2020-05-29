@@ -1,6 +1,6 @@
 <template>
-  <v-sheet height="100%" color="">
-    <div class="banner"></div>
+  <v-sheet color="">
+    <div class="contact-banner"></div>
     <div>
       <div class="aboutwho">
         <div class="ab11">
@@ -175,7 +175,7 @@ export default {}
 </script>
 
 <style>
-.banner {
+.contact-banner {
   background: url(../../assets/img/contactbanner.png) no-repeat;
   width: 1100px;
   height: 400px;
@@ -186,7 +186,7 @@ export default {}
 .team {
   background: url(../../assets/img/team_bg.png) no-repeat center top;
   width: 100%;
-  height: 40px;
+  height: 45px;
   min-width: 1250px;
   /* background-size: 1150px 100%; */
 }
@@ -224,10 +224,7 @@ h1 {
 .clearfloat {
   zoom: 1;
 }
-ul,
-li,
-ol,
-dl {
+ul,li,ol,dl {
   list-style: none;
 }
 
@@ -248,10 +245,17 @@ dl {
 }
 .wwrconyi img {
   vertical-align: middle;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
-img {
+.wwrconyi img:hover {
+  transform: translateY(-8px);
+}
+/* img {
   border: 0;
-}
+} */
 .wwrconer {
   text-align: center;
 }

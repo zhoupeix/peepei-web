@@ -35,10 +35,10 @@
           <div id="about" class=" display-3 ">优势</div>
           <p class="mb-3 mt-2" style="color:#757575">六大优势领先行业</p>
           <div class="icon-gamelist-content">
-            <ul id="game-list">
+            <ul class="game-list" style="height:100%">
               <li class="ui-game-9" v-for="(item, i) in iconUrls" :key="i">
                 <img :src="item.imgUrl" alt="" />
-                <p style="width:150px !important">{{ item.name }}</p>
+                <p >{{ item.name }}</p>
               </li>
             </ul>
           </div>
@@ -62,7 +62,7 @@
             </p>
             <ul id="game-list">
               <li class="ui-game-9" v-for="(item, i) in imgUrls" :key="i">
-                <img :src="item.imgUrl" alt="斗地主" />
+                <img :src="item.imgUrl" :alt="item.name" />
                 <p>{{ item.name }}</p>
               </li>
             </ul>
@@ -500,7 +500,7 @@ export default {
 }
 .btn1 {
   display: inline-block;
-  background: url('../assets/img/p1.png') no-repeat;
+  background: url(../assets/img/p1.png) no-repeat;
   width: 345px;
   height: 130px;
   margin-right: 75px;
@@ -508,7 +508,7 @@ export default {
 }
 .btn2 {
   display: inline-block;
-  background: url('../assets/img/p2.png') no-repeat;
+  background: url(../assets/img/p2.png) no-repeat;
   width: 345px;
   height: 130px;
   margin-right: 75px;
@@ -516,7 +516,7 @@ export default {
 }
 .btn3 {
   display: inline-block;
-  background: url('../assets/img/p3.png') no-repeat;
+  background: url(../assets/img/p3.png) no-repeat;
   width: 345px;
   height: 130px;
   margin-right: 75px;
@@ -585,17 +585,17 @@ ul {
 li {
   display: list-item;
 }
-img {
-  width: 100%;
-}
-
-img {
+.ui-game-9 img {
+  width: 100%; 
+  /* max-width: 100%; */
+  /* height: 100%; */
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
   transition-delay: 0s;
 }
-img:hover {
+
+.ui-game-9 img:hover {
   transform: translateY(-8px);
 }
 .banner {
