@@ -75,11 +75,11 @@
       </li>
 
       <li>
-        <a href="javascript:void(0)" class="fdright_nav_tel">4000865060</a>
+        <a href="javascript:void(0)" class="fdright_nav_tel">15366630075</a>
       </li>
 
       <li class="fdright_nav_wx">
-        <img src="@/assets/img/footer_wx1.png" alt="关注微信" />
+        <img src="" alt="关注微信" />
       </li>
       <li id="to-top" class="fdright_nav_top" @click="backTop()"></li>
     </ul>

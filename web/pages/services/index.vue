@@ -81,7 +81,7 @@
               height='260'
             >
               <div align="center" justify="center" class="mb-1">
-                <img cclass='icon' src="@/assets/img/roomcard.png" alt="">
+                <img class='icon' src="@/assets/img/roomcard.png" alt="">
                 <p style="font-weight:bold">地方房卡棋牌开发</p>
                 <p style=" font-size: 14px;
                   color: #696969;
@@ -159,7 +159,7 @@
               >
                 <v-icon>mdi-chat-plus</v-icon>
               </v-btn>
-              <div class="font-weight-light grey--text title mb-2">
+              <div class="font-weight-light grey--text mb-2" style="font-size:18px">
                 零成本 共享盈利 共担风险
               </div>
               <h3 class="display-1 font-weight-light orange--text mb-2" >

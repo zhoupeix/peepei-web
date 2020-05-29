@@ -58,7 +58,7 @@
           <div class="ui-gamelist-content">
             <h2 class="ma-2" style="display:inline-block">热门手机游戏列表</h2>
             <p class="ma-2" style="display:inline-block; float:right">
-              <nuxt-link :to="{path:'/products'}" class="fn-right">更多游戏 &gt;</nuxt-link>
+              <nuxt-link :to="{path:'/cases'}" class="fn-right">更多游戏 &gt;</nuxt-link>
             </p>
             <ul id="game-list">
               <li class="ui-game-9" v-for="(item, i) in imgUrls" :key="i">
