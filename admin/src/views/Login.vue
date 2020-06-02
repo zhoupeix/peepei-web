@@ -27,6 +27,7 @@ export default {
   methods:{
    async login(){
       const res = await this.$http.post('/login',this.model)
+      
       localStorage.token = res.data.token  // 浏览器关闭 依然存在
       localStorage.username = res.data.username
       // sessionStorage.token = res.data.token // 当前会话 浏览器关闭 将删除token
@@ -35,7 +36,7 @@ export default {
         type:'success',
         message:`${res.data.username} 欢迎回来！`
       })
-      console.log(res.data)
+      // console.log(res.data)
     }
   }
 }

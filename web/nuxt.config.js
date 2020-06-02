@@ -19,7 +19,8 @@ export default {
   //   NODE_ENV: process.env.NODE_ENV} ,
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    // title: process.env.npm_package_name || '',
+    title:"西窗游戏",
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

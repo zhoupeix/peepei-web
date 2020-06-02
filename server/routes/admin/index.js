@@ -100,15 +100,19 @@ module.exports = app => {
   const upload = multer({ dest: __dirname + "/../../uploads" });
   app.post("/admin/api/upload",authMiddleWare(),upload.single("file"), async (req, res) => {
     const file = req.file;
-    file.url = `http://admin.peepei.con/uploads/${file.filename}`;
+    file.url = `http://admin.peepei.com/uploads/${file.filename}`;
     res.send(file);
   });
 
   app.post("/admin/api/login", async (req, res) => {
     //用户校验步骤 1. 查数据库用户 2.验证密码 3.返回token
     const { username, password } = req.body;
-
+    console.log('req.body',req.body)
+    console.log('username',username)
     const user = await AdminUser.findOne({ username }).select("+password");
+
+    console.log('models',AdminUser)
+    console.log('user',user)
     assert(user,422,'用户名不正确!')
     // if (!user) {
     //   return res.status(422).send({

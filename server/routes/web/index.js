@@ -20,7 +20,7 @@ module.exports=app=>{
     const parent = await Category.findOne().where({
       name:'新闻资讯'
     })
-
+    
     const cats = await Category.aggregate([
       {$match:{parent:parent._id}},
       {
@@ -33,7 +33,7 @@ module.exports=app=>{
       }
     ]
     )
-    // 数组中增加cateName 
+    // cats数组中增加cateName 
     cats.map(cat=>{
       cat.newsList.map(news=>{
         news.categoryName = cat.name

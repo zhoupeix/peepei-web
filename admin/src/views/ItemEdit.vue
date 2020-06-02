@@ -113,7 +113,7 @@ export default {
     async fetch() {
       const res = await this.$http.get(`rest/items/${this.id}`);
       this.model = res.data;
-      console.log(res.data);
+      console.log('item',res.data);
     }
   },
   created() {

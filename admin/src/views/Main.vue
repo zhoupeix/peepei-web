@@ -9,9 +9,9 @@
       <el-dropdown>
         <i class="el-icon-setting" style="margin-right: 15px "></i>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>查看</el-dropdown-item>
-          <el-dropdown-item>新增</el-dropdown-item>
-          <el-dropdown-item>删除</el-dropdown-item>
+          <el-dropdown-item @click.native="logout">退出</el-dropdown-item>
+          <el-dropdown-item >个人设置</el-dropdown-item>
+          <!-- <el-dropdown-item>删除</el-dropdown-item> -->
         </el-dropdown-menu>
       </el-dropdown>
       <span>{{username}}</span>
@@ -25,8 +25,7 @@
     <el-menu router
       :default-active="$route.path"
       class="el-menu-vertical-demo"
-      @open="handleOpen"
-      @close="handleClose"
+  
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b"
@@ -183,19 +182,23 @@ data() {
     },
     methods: {
       handleOpen(key, keyPath) {
-        console.log(key, keyPath);
+        // console.log(key, keyPath);
       },
       handleClose(key, keyPath) {
-        console.log(key, keyPath);
+        // console.log(key, keyPath);
       },
       toggleCollapse(){
       this.isCollapse = !this.isCollapse
+      },
+      logout(){
+        window.localStorage.clear();
+        this.$router.push('/login')
       }
     },
 
     created(){
       this.username = localStorage.username
-      console.log(this.username)
+      
     }
 }
 </script>

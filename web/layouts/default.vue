@@ -18,12 +18,12 @@
             gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
           ></v-img>
         </template>
-        <div>
+        <!-- <div>
           <img src="@/assets/img/wlogo.png" alt="西窗游戏" />
-        </div>
-        <!-- <v-app-bar-nav>
+        </div> -->
+        <v-app-bar-nav>
           <img src="@/assets/img/wlogo.png" alt="">
-        </v-app-bar-nav> -->
+        </v-app-bar-nav>
         <v-toolbar-title>西窗游戏 | 专注 专业 专有 </v-toolbar-title>
 
         <v-spacer></v-spacer>
@@ -224,11 +224,13 @@ export default {
 }
 </script>
 <style scoped>
+/* 吸顶效果 */
 /* #target{
   position: sticky;
   top: 0;
-  z-index: 999;
-} 吸顶效果 */
+  z-index: 2;
+  height: 100% !important;
+}  */
 .ui-telphone {
   position: relative;
   width: 245px;
